@@ -41,3 +41,37 @@
 .card.active{
     display: block;
 }
+.multi-step-form {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(.75);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
